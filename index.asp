@@ -128,7 +128,7 @@
 		function BlockUI(DOM)
 		{
 			$(DOM).block({ 
-				message: '<div><i class="icon-refresh"></i> Saving</div>', 
+				message: '<div><i class="icon-refresh"></i> Saving</div>' 
 			}); 
 		}
 		
