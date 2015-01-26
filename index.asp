@@ -44,7 +44,7 @@
 		
 		function InitialSearch(ContentClassGuid)
 		{
-			var strRQLXML = '<PAGE action="xsearch" orderby="headline" orderdirection="ASC" pagesize="0" maxhits="0"><SEARCHITEMS><SEARCHITEM key="contentclassguid" value="' + ContentClassGuid + '" operator="eq"></SEARCHITEM></SEARCHITEMS></PAGE>';
+			var strRQLXML = '<PAGE action="xsearch" orderby="headline" orderdirection="ASC" pagesize="-1" maxhits="-1"><SEARCHITEMS><SEARCHITEM key="contentclassguid" value="' + ContentClassGuid + '" operator="eq"></SEARCHITEM></SEARCHITEMS></PAGE>';
 			
 			RqlConnectorObj.SendRql(strRQLXML, false, function(data){
 				$(data).find("PAGE").each(function(){
